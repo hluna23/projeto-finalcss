@@ -267,22 +267,34 @@ filter: invert(1);
   padding: 5px 5px;
   left: 850px;
   position: relative;
-  margin-top: 120px;
-
-
-}
-
-.info p {
+  top: 110px;
   color: #02f1d4;
   font-size: 18px;
   font-family: "roboto";
   text-shadow: 0px 0px 25px #0184fa;
-  width: 250px;
+  width: 250px; 
 }
+select {
+margin-top: 10px;
+}
+#repos{
+  padding: 5px;
+  margin-bottom:10px;
+}
+select{
+padding: 10px;
+}
+
 
 .formulario {
   font-size: 18px;
 
+}
+.span-required{
+  display: none;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: red;
 }
 .card_1 {
   height: 400px;
@@ -565,6 +577,7 @@ textarea {
 }
 
 .info {
+  top: 40px;
   left: 30%;
   
   
@@ -737,6 +750,7 @@ margin-top: 40px;
 }
 
 .info {
+  top: 20px;
   left: 28%;
   
   

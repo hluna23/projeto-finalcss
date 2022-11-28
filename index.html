@@ -83,27 +83,50 @@
 
 <main class="contatos">
     <h2 id="contatos">contatos</h2>
+    
     <div class="contato">
        <span class="info">
-        <p>Gostaria de recibir informação</p>
-          <input type="radio" id="informaçao" name="informacao" value="si" required>
-          <label for="si">si</label>
-          <input type="radio" id="informaçao" name="informacao" value="nao" required>
-          <label for="no">não</label>
-           <button>enviar</button>
+        <form action="#">
+          
+          
+          <input type="submit" value="Buscar mi repositorio" id="repos"><br>
+          <label for="lang"> Repositorio Github </label><br>
+          <select name="lenguajes" id="lang" >
+             <option value="selecciona">Selecciona uma opção</option>
+             <option class="link1" id="Repos1"></option>
+            <option class="link2" id="Repos2"></option>
+            <option class="link3" id="Repos3"></option>
+            <option class="link4" id="Repos4"></option>
+            <option class="link5" id="Repos5"></option>
+            
+          </select>
+        </form>
        </span> 
+     
+
        <span class="card_1">
       
+
           <p class="formulario">Feedback</p>
         
     
-          <form action="formulario">
-            <input type='text' name='nombre' placeholder='Nombre Completo'>
-            <input type='text' name='telefone' placeholder='Telefone'>
-            <input type='text' name='email' placeholder='Email'>
+        <form>
+          <label>
+              <input type='text' name='nombre' placeholder='Nombre Completo' id="name" class="required" oninput="nameValidade()">
+              <span class="span-required">Nome debe ter mínimo 3 caracteres</span>
+          </label>
+          <label>
+            <input type='text' name='telefone' placeholder='Telefone' id="tlf" class=" required" oninput="telefoneValidade()">
+            <span class="span-required">Digite um telefone válido</span>
+          </label>
+          <label>  
+            <input type='email' name='email' placeholder='Email' id="email" class="required" oninput="emailValidade()">
+            <span class="span-required">Digite um email válido</span>
+          </label>  
             <textarea name="mensaje" placeholder='escriba su mensjae'></textarea>
-            <input type='button' value='ENVIAR' id=boton class="button">
-          </form>
+            <button type="submit" value='ENVIAR' id=boton class="button">ENVIAR</button>
+
+        </form>
             
        </span>   
     </div>
@@ -126,6 +149,6 @@
     <p>&copy;
     <img src="imagens/LOGO FINAL.png" alt="" width="50px"> 2022</p> 
   </footer>
-  
+  <script src="index.js"></script>
 </body>
 </html>
